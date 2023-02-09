@@ -1,14 +1,17 @@
 body{
-
-    text-align: center;
+    background: white;
 }
 
+.logo_name {
+    font-size: 1.6em;
+    text-align: center;
+}
 nav ul li a {
     color: #000;
     font-weight:500;
     float:right;	
     text-decoration: none;
-    padding:40px 20px 20px 20px;
+    padding:20px 20px 20px 20px;
     list-style:none;
 }
 
@@ -17,8 +20,26 @@ nav li {
 }
 
 #logo {
-    padding: 1.5em;
-        float: center;
+    width: auto;
+    height:150px;
+    float: center;
+    padding: 0px;
+    margin: auto;
+    display: block;
+}
 
-        }
-
+#bar{
+	background: rgb(235, 127, 127);
+	border-radius: 5px;
+	/*box-shadow: x-offset y-offset blur color; rgba: a=opacity*/
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.25);
+	height: 50px;
+	list-style: none;
+	margin: 20px auto;
+	padding: 0 20px;
+/*Flexbox*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	}
