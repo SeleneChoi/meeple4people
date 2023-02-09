@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500&display=swap');
+	
+
+	font: 16px/1.6
+	
+	@media all and (max-width: 1200px) 
+
+		* {
+			margin:0;
+			padding:0;
+		}
+
+		body {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 300;
+			background-color: #bfd1b6;
+		}
+
+		#logo {
+		padding: 1.5em;
+			float: left;
+			}
+
+		header {
+			padding:10px;
+			border-bottom: 2px solid;
+			height: 100px;  	
+		}
+
+
+		nav ul li a {
+			color: #000;
+			font-weight:500;
+			float:right;	
+			text-decoration: none;
+			padding:40px 20px 20px 20px;
+			list-style:none;
+		}
+
+		nav li {
+			list-style-type: none;
+		}
+
+		footer a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		a:hover {
+  			color: #e07e3d;
+		}
+
+		a:active {
+  			color: yellow;
+  		}
+
+		h1 {
+			font-size: 3em;
+		}
+		h3 {
+			font-size: 2em;
+		}
+
+		p {
+			Line-height: 1.5em;			
+		}
+
+		ol {
+			font-size: 20px;
+			margin-left:5px;
+			text-decoration: none;
+		}
+
+		.twocolumn {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			background: #e8cfbe;
+			padding: 1em;
+			border-radius: 5px;
+		  }
+
+		  .articleimgleft {
+		  	margin-right:1em;
+			flex: 1;
+			}
+		 
+		  
+		  .articlemsg {
+		  	font-family: 'Dosis', sans-serif;
+		  	font-weight: 500;
+		  	text-align: center;
+		  	padding-top: 4.5em;
+		  }
+
+		  .articletext {
+		  	padding: 3em;
+		  }
+
+		  .quickfacts {
+		  	list-style: square;
+		  	margin-left:40px;
+		  }
+
+		footer {
+			color: #fff;
+			background-color: #505c4a;
+			display:flex;
+			flex-direction:column;
+/*			border:2px solid black;*/
+		}
+
+		footer ul {
+			display:flex;
+			/*position:fixed;
+			bottom:1em;
+			right:0;
+			left:0;
+			align-items: center;
+			justify-content: center;*/
+/*			padding: 3em;*/
+/*			border:2px solid black;*/
+		}
+
+		footer ul li {
+		margin: 2em;
+		color: white;
+		list-style: none;
+		}
+
+	.subscribe {
+			float:right;
+			margin-right: 2em;
+/*			border: 2px solid black;*/
+		}
+	.fcontent {
+		font-weight: 500;
+		display:flex;
+		align-items:center;
+		justify-content: space-between;
+/*		border: 2px solid black;*/
+	}
+
+	form input[type=submit] {
+ 	 font-size: 1 em;
+ 	 border: none;
+ 	 border-radius: 20px;
+ 	 background: #1e3015;
+ 	 color: #fff;
+ 	 padding: 1em 2em
+	}
+
+	.legal {
+		text-align: center;
+		padding: 1em;
+/*		border:2px solid red;*/
+	}
+
+
