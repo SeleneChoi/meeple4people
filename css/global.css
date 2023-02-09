@@ -1,0 +1,18 @@
+nav ul li a {
+    color: #000;
+    font-weight:500;
+    float:right;	
+    text-decoration: none;
+    padding:40px 20px 20px 20px;
+    list-style:none;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+#logo {
+    padding: 1.5em;
+        float: center;
+
+        }
