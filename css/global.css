@@ -1,3 +1,8 @@
+body{
+
+    text-align: center;
+}
+
 nav ul li a {
     color: #000;
     font-weight:500;
@@ -16,3 +21,4 @@ nav li {
         float: center;
 
         }
+
