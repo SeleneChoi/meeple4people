@@ -8,6 +8,8 @@ body{
 .logo_name {
     font-size: 1.6em;
     text-align: center;
+    /* border: 1px red solid; */
+    margin: 0px;
 }
 
 #logo {
@@ -18,7 +20,60 @@ body{
     margin: auto;
     display: block;
 }
+/* ATTEMPT TO PUT SIDE BY SIDE (CENTER/RIGHT) */
+/* .side-by-side {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: inline;
+    border: 1px green solid;
+}
+.title {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    justify-content: flex-end;
+    border: 1px blue solid;
+    float: center;
+} */
+.search_bar {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    justify-content: flex-end;
+    /* border: 1px red solid; */
+}
 
+#search {
+    width:30px;
+    /* border: 1px green solid; */
+    padding: 2px;
+    margin-right: 8px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+}
+.reservation {
+    padding: 8px 15px;
+    border: none; 
+    border-radius: 20px;
+    background-color: #81d3ed;
+    font: 1em 'Fredericka the Great', bold;
+    font-weight: 500px;
+    /* color: white; */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    /* text-decoration-line: none; */
+}
 #bar{
 	background: #f26f6f;
     margin: 0px;
@@ -26,7 +81,7 @@ body{
     box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.25);
 	height: 50px;
 	list-style: none;
-	margin: 20px auto;
+	margin: 15px auto;
 	padding: 0 20px;
 /*Flexbox*/
 	display: flex;
@@ -44,7 +99,7 @@ body{
     padding:15px 20px 20px 20px;
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1400px) {
     #bar {
         justify-content: space-around;
         }
