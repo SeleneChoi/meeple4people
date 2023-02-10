@@ -1,22 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
 body{
     background: white;
+    font-family: 'Fredericka the Great', cursive;
 }
 
 .logo_name {
     font-size: 1.6em;
     text-align: center;
-}
-nav ul li a {
-    color: #000;
-    font-weight:500;
-    float:right;	
-    text-decoration: none;
-    padding:20px 20px 20px 20px;
-    list-style:none;
-}
-
-nav li {
-    list-style-type: none;
 }
 
 #logo {
@@ -29,10 +20,10 @@ nav li {
 }
 
 #bar{
-	background: rgb(235, 127, 127);
+	background: #f26f6f;
+    margin: 0px;
 	border-radius: 5px;
-	/*box-shadow: x-offset y-offset blur color; rgba: a=opacity*/
-	box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.25);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.25);
 	height: 50px;
 	list-style: none;
 	margin: 20px auto;
@@ -43,3 +34,37 @@ nav li {
 	flex-wrap: nowrap;
 	justify-content: flex-end;
 	}
+    
+
+#bar li a {
+    color: #000;
+    font-weight: 600;
+    float:right;	
+    text-decoration: none;
+    padding:15px 20px 20px 20px;
+}
+
+@media all and (max-width: 1200px) {
+    #bar {
+        justify-content: space-around;
+        }
+   #bar > li > a {
+       font: 1em;
+       white-space: nowrap; /*required for tight spaces*/
+       -webkit-transition:  all 0.25s;
+       transition: all 0.25s;
+       }
+}
+
+@media all and (max-width: 600px) {
+    #bar {
+        justify-content: space-around;
+        width: 500px;
+    }
+   #bar > li > a {
+       font: 0.6em;
+       /* white-space: nowrap; required for tight spaces */
+       -webkit-transition:  all 0.25s;
+       transition: all 0.25s;
+       }
+}
