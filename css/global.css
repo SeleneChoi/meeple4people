@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Fredoka&display=swap');
-/* font-family: 'ABeeZee', sans-serif; //use it for body text */
+/* font-family: 'ABeeZee', sans-serif; //use it for main text */
 
 body{
     background: white;
@@ -222,4 +222,10 @@ ul {
 /* COPYRIGHT */
 .legal {
     text-align: center;
+}
+
+
+main{
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 300;
 }
