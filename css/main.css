@@ -33,12 +33,12 @@ main{
     justify-content: space-around;
 }
 
-.snack_copy, .game_copy {
+.main_copy {
     /* border: 2px blue solid; */
     margin: auto 50px;
     padding: 10px 20px;
 }
-.game_img, .snack_img {
+.game_img, .snack_img, .blog_img {
     /* border: 2px blue solid; */
     margin: auto;
     padding: 10px 20px;
@@ -54,6 +54,9 @@ main{
     width: 600px;
     height: auto;
     border-radius: 10px;
+}
+.main_img:hover {
+    opacity: 70%;
 }
 @media all and (max-width: 1280px){
     .side-by-side {
@@ -78,6 +81,11 @@ main{
     #banner { 
         width: 100%;
     }
+}
+h1{
+    text-align: center;
+    font-size: 2.44em;
+    line-height: 3em;
 }
 h2{
     font-size: 2em;
