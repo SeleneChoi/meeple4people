@@ -3,4 +3,99 @@
 main{
     font-family: 'ABeeZee', sans-serif;
     font-weight: 300;
+    margin: auto;
+}
+
+.container, .game, .snack {
+    width: 95%;
+    /* border: 2px red solid; */
+    margin: 10px 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.container {
+    padding: 30px 20px 50px;
+}
+.game, .snack {
+    margin: 50px 50px 0px 50px;
+    padding: 10px 20px;
+}
+
+.side-by-side {
+    /* border: 2px green solid; */
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.snack_copy, .game_copy {
+    /* border: 2px blue solid; */
+    margin: auto 50px;
+    padding: 10px 20px;
+}
+.game_img, .snack_img {
+    /* border: 2px blue solid; */
+    margin: auto;
+    padding: 10px 20px;
+}
+
+#banner {
+    width: 1000px;
+    height: 500px;
+}
+
+.main_img {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+}
+@media all and (max-width: 1280px){
+    .side-by-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #reverse {
+        flex-direction: column-reverse;
+    }
+    #banner { 
+        width: 850px;
+    }
+}
+@media all and (max-width: 600px) {
+    .main_img {
+        width: 300px;
+        height: auto;
+    }
+    #banner { 
+        width: 100%;
+    }
+}
+h3{
+    text-align: center;
+    /* letter-spacing: 1px; */
+    line-height: 1.5em;
+}
+.main_button {
+    display: block;
+    margin: auto;
+
+    font-family: 'ABeeZee', sans-serif;
+    padding: 10px 18px;
+    border:2px #f1f087 solid;  
+    border-radius: 20px;
+    background-color: #f1f087;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    text-transform: uppercase;
+}
+
+.main_button:hover {
+    background-color: white;
+    border: 2px #f1f087 solid; 
 }
