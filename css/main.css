@@ -1,13 +1,13 @@
 
 /* MAIN */
-main{
+section{
     font-family: 'ABeeZee', sans-serif;
     font-weight: 300;
     margin: auto;
 }
 
 .container, .game, .snack {
-    width: 95%;
+    /* width: 95%; */
     /* border: 2px red solid; */
     margin: 10px 5px;
 
@@ -34,25 +34,26 @@ main{
 }
 
 .main_copy {
-    /* border: 2px blue solid; */
+    /* border: 2px violet solid; */
     margin: auto 50px;
     padding: 10px 20px;
 }
 .game_img, .snack_img, .blog_img {
+    width: 90%;
     /* border: 2px blue solid; */
     margin: auto;
     padding: 10px 20px;
 }
 
 #banner {
-    width: 1000px;
-    height: 500px;
+    /* width: 1000px; */
+    /* height: 500px; */
     border-radius: 20px;
 }
 
 .main_img {
-    width: 600px;
-    height: auto;
+    width: 100%;
+    /* height: auto; */
     border-radius: 10px;
 }
 .main_img:hover {
@@ -67,35 +68,49 @@ main{
     #reverse {
         flex-direction: column-reverse;
     }
-    #banner { 
+    /* #banner { 
         width: 850px;
-    }
-    .main_img {
+    } */
+    /* .main_img {
         width: 500px;
-    }
+    } */
 }
-@media all and (max-width: 600px) {
+/* @media all and (max-width: 600px) {
     .main_img {
         width: 400px;
     }
     #banner { 
         width: 100%;
     }
-}
+} */
 h1{
     text-align: center;
     font-size: 2.44em;
     line-height: 3em;
 }
 h2{
-    font-size: 2em;
+    text-align: center;
+    font-size: 1.8em;
     font-weight: 500px;
     line-height: 3em;
 }
 h3{
     text-align: center;
-    /* letter-spacing: 1px; */
+    letter-spacing: 1px;
     line-height: 1.5em;
+}
+.container > ul > li {
+    line-height: 2em;
+    text-align: center;
+}
+p {
+    text-align: center;
+    line-height: 1.8em;
+    margin: 10px 10%;
+}
+#bullet > li {
+    list-style-type: circle;
+    text-align: left;
 }
 .main_button {
     display: block;
