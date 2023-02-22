@@ -14,7 +14,7 @@ section{
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -31,6 +31,11 @@ section{
 #test {
     /* border: 2px blue solid; */
     width: 50%;
+}
+
+/* for game page equally distributed sections */
+#game {
+    width: 30%;
 }
 
 /* blog list decoration */
@@ -54,6 +59,9 @@ section{
     }
     #reverse {
         flex-direction: column-reverse;
+    }
+    #game {
+        width: 100%;
     }
 }
 
@@ -117,7 +125,7 @@ h3{
     /* border:2px #f1f087 solid;   */
     text-align: center;
     letter-spacing: 1px;
-    line-height: 1.5em;
+    line-height: 1.6em;
 }
 .container > ul > li {
     line-height: 2em;
@@ -126,7 +134,7 @@ h3{
 p {
     text-align: center;
     line-height: 1.8em;
-    margin: 10px 10%;
+    /* margin: 10px 10%; */
 }
 #bullet > li {
     list-style-type: circle;
