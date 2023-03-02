@@ -2,6 +2,7 @@
 /* font-family: 'ABeeZee', sans-serif; //use it for main text */
 
 body{
+    margin:0;
     background: white;
     font-family: 'Fredoka', sans-serif;
     font-weight: 600;
@@ -91,7 +92,7 @@ ul {
 #bar{
 	background: #f26f6f;
     margin: 0px;
-	border-radius: 5px;
+	/* border-radius: 5px; */
     box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.25);
 	height: 50px;
 	margin: 15px auto;
@@ -111,6 +112,11 @@ ul {
     float:right;	
     text-decoration: none;
     padding:15px 20px 20px 20px;
+}
+#bar li a:hover {
+    color: white;
+    font-weight: 500;
+    /* font-size: 1.2em; */
 }
 
 @media all and (max-width: 1400px) {
@@ -145,7 +151,7 @@ ul {
 .fcontent {
     width: 100%;
 	background: #f26f6f;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.25);
     /* border: 2px blue solid; */
     display: flex;
@@ -162,7 +168,10 @@ ul {
     flex-direction: column;
     justify-content: space-between;
 }
-
+ul > li > a:hover {
+    color: white;
+    font-weight: 500;
+}
 .list_1, .list_2 {
     width: 220px;
     margin: 5px;
@@ -224,9 +233,5 @@ ul {
 #sub_button:hover {
     background-color: rgb(255, 59, 92);
     border: 2px white solid; 
-}
-/* COPYRIGHT */
-.legal {
-    text-align: center;
 }
 
