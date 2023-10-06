@@ -67,7 +67,7 @@ section{
     border-radius: 10px;
 }
 
-@media all and (max-width: 1080px){
+@media all and (max-width: 1000px){
     .side-by-side {
         display: flex;
         flex-direction: column;

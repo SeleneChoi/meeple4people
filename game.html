@@ -38,15 +38,20 @@
 
 <body>
 
-
     <header>
-        <div>
-            <div>
-                <a href="index.html"><img src="img/M4P_Logo.png" id="logo"></a>
-                <a href="index.html"><h1 class="logo_name">Meeple 4 People Cafe</h1></a>
+        <div class="overlay1">
+            <div class="header_top">
+                <div>
+                    <a href="index.html"><img src="img/M4P_Logo.png" id="logo"></a>
+                    <a href="index.html"><h1 class="logo_name">Meeple 4 People Cafe</h1></a>    
+                </div>
                 <div class="search_bar">
-                    <a href="#"><img id="search" src="img/search.png"></a>
-                    <a href="#"><button class="reservation">Reservation</button></a>
+                    <!-- <a href="#"><img id="search" src="img/search.png"></a> -->
+                    <div class="search_hover">
+                        <input type="text" placeholder="Search Anything You Want!">
+                        <img id="search" src="img/search.png">
+                    </div>
+                    <a href="#"><button onClick="showForm()" class="reservation">Reservation</button></a>
                 </div>
             </div>
             <nav>
@@ -60,8 +65,44 @@
             </nav>
         </div>
     </header>
-    
 
+    <!-- reservation form -->
+    <form id="reservation">
+        <button onClick="closeForm()" class="close_btn">X</button>
+        <div class="headline">
+            <h2>RESERVATION</h2>
+            <p class="sub_head">Reserve a table and We'll arrange the rest for you!</p>   
+        </div>
+        <div>
+            <p class="p_left">Date :</p>
+            <input type="date" placeholder="Select Date">    
+        </div>
+        <div>
+            <p class="p_left">Time :</p>
+            <input type="time" placeholder="Select Time">    
+        </div>
+        <div>
+            <p class="p_guest">No. of Guests :</p>
+            <input class="input_guest" type="number" placeholder="0">    
+        </div>
+        <div>
+            <p class="p_left">Name :</p>
+            <input type="text" placeholder="Your Name">    
+        </div>
+        <div>
+            <p class="p_left">Email :</p>
+            <input type="text" placeholder="Your Email">    
+        </div>
+        <div>
+            <p class="p_left">Phone :</p>
+            <input type="text" placeholder="Your Phone Number">    
+        </div>
+        <p>Special Request (optional) :</p>
+        <input class="input_request" type="text" placeholder="Your Special Request">
+        <div class="reserve_btn_container">
+            <button type="submit" onClick="showDetail()" class="reserve_btn">Reserve!</button>    
+        </div>
+    </form> 
     <section>
             <div class="container">
 
@@ -69,7 +110,7 @@
                 <div class="side-by-side">
 
                     <div class="container" id="game">
-                            <img class="main_img"  src="img/quacks.jpg" alt="quacks">
+                            <img class="main_img"  src="img/quacks.png" alt="quacks">
                             <h3>Board Game 1: Quacks of Quedlinburg</h3>
                             <p>In the little city of Quedlinburg, an annual competition is held for doctors and quack surgeons to brew the best potion! Each Charlatan (player) will draw as many  ingredients to their pot, but be careful not to explode it! The ultimate push-your-luck strategy game to claim your victory as the best Quack of Quedlinburg!
                             </p>
@@ -77,7 +118,7 @@
                     </div>
 
                     <div class="container" id="game">
-                            <img class="main_img" src="img/everdell.jpg" alt="everdell">
+                            <img class="main_img" src="img/everdell.png" alt="everdell">
                             <h3>Board Game 2: Everdell</h3>
                             <p>Hidden in a secret realm, Everdell is a valley where you place workers, manage resources, and expand your colony! Journey through a wondrous world and stunning artwork by James A. Wilson. Build a grand critter civilization and gain the most victory points to win!
                             </p>
@@ -85,7 +126,7 @@
                     </div>
 
                     <div class="container" id="game">
-                            <img class="main_img" src="img/pointsalad.jpg" alt="pointsalad">
+                            <img class="main_img" src="img/pointsalad.png" alt="pointsalad">
                             <h3>Board Game 3: Point Salad</h3>
                             <p>What veggies do you like in your salad? Carrots, tomato, onion, lettuce, or even bell pepper? Point Salad is a fast and easy card  game to learn, gathering groupings of veggies to match your point cards. Fun to play with from two to six players. Combine endless possibilities to gain the most points!
                             </p>
@@ -148,6 +189,8 @@
 
     </footer>
 
+    <script src="js/animation.js"></script>
+    <script src="js/eventHandler.js"></script>
 
 </body>
 </html>

@@ -33,27 +33,72 @@
 
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="bSx6jiVD"></script>    
+
     <header>
-    <div>
-        <div>
-            <a href="index.html"><img src="img/M4P_Logo.png" id="logo"></a>
-            <a href="index.html"><h1 class="logo_name">Meeple 4 People Cafe</h1></a>
-            <div class="search_bar">
-                <a href="#"><img id="search" src="img/search.png"></a>
-                <a href="#"><button class="reservation">Reservation</button></a>
+        <div class="overlay1">
+            <div class="header_top">
+                <div>
+                    <a href="index.html"><img src="img/M4P_Logo.png" id="logo"></a>
+                    <a href="index.html"><h1 class="logo_name">Meeple 4 People Cafe</h1></a>    
+                </div>
+                <div class="search_bar">
+                    <!-- <a href="#"><img id="search" src="img/search.png"></a> -->
+                    <div class="search_hover">
+                        <input type="text" placeholder="Search Anything You Want!">
+                        <img id="search" src="img/search.png">
+                    </div>
+                    <a href="#"><button onClick="showForm()" class="reservation">Reservation</button></a>
+                </div>
             </div>
+            <nav>
+                <ul id="bar">
+                    <li><a href="game.html"> Games </a></li>
+                    <li><a href="snack.html"> Snacks </a> </li>
+                    <li><a href="blog.html"> Blogs </a></li>
+                    <li><a href="about.html"> About Us </a> </li>
+                    <li><a href="contact.html"> Contact Us </a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul id="bar">
-                <li><a href="game.html"> Games </a></li>
-                <li><a href="snack.html"> Snacks </a> </li>
-                <li><a href="blog.html"> Blogs </a></li>
-                <li><a href="about.html"> About Us </a> </li>
-                <li><a href="contact.html"> Contact Us </a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    </header>
+
+    <!-- reservation form -->
+    <form id="reservation">
+        <button onClick="closeForm()" class="close_btn">X</button>
+        <div class="headline">
+            <h2>RESERVATION</h2>
+            <p class="sub_head">Reserve a table and We'll arrange the rest for you!</p>   
+        </div>
+        <div>
+            <p class="p_left">Date :</p>
+            <input type="date" placeholder="Select Date">    
+        </div>
+        <div>
+            <p class="p_left">Time :</p>
+            <input type="time" placeholder="Select Time">    
+        </div>
+        <div>
+            <p class="p_guest">No. of Guests :</p>
+            <input class="input_guest" type="number" placeholder="0">    
+        </div>
+        <div>
+            <p class="p_left">Name :</p>
+            <input type="text" placeholder="Your Name">    
+        </div>
+        <div>
+            <p class="p_left">Email :</p>
+            <input type="text" placeholder="Your Email">    
+        </div>
+        <div>
+            <p class="p_left">Phone :</p>
+            <input type="text" placeholder="Your Phone Number">    
+        </div>
+        <p>Special Request (optional) :</p>
+        <input class="input_request" type="text" placeholder="Your Special Request">
+        <div class="reserve_btn_container">
+            <button type="submit" onClick="showDetail()" class="reserve_btn">Reserve!</button>    
+        </div>
+    </form> 
 
 
 <section>
@@ -146,6 +191,8 @@
 
     </footer>
 
-</body>
+    <script src="js/animation.js"></script>
+    <script src="js/eventHandler.js"></script>
 
+</body>
 </html>
