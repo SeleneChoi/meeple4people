@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property=og:site_name content="www.meeple4people.selenechoi.ca" />
+    <meta property=og:title content="Meeple 4 People" />
+    <meta property="og:type" content="website" />
+    <meta property=og:image content="http://meeple4people.selenechoi.ca/img/M4P_Logo.png" />
+    <meta property=og:description content="Welcome to Meeple 4 People Cafe! Come visit out board game cafe here in Downtown Vancouver!" />
+    <meta name= description content="Welcome to Meeple 4 People Cafe! Come visit out board game cafe here in Downtown Vancouver!" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@Meeple_4_People" />
+    <meta name="twitter:title" content="Meeple 4 People" />
+    <meta name="twitter:description" content="Welcome to Meeple 4 People Cafe! Come visit out board game cafe here in Downtown Vancouver!" />
+    <meta name="twitter:image" content="http://meeple4people.selenechoi.ca/img/M4P_Logo.png" />
+
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=64024f80b4b9dc0019a951a6&product=sop' async='async'></script>    <title>Meeple 4 People</title>
+    
+    <link rel="icon" href="img/M4P_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+
+<body>
+
+
+    <header>
+        <div class="overlay1">
+            <div>
+                <a href="index.html"><img src="img/M4P_Logo.png" id="logo"></a>
+                <a href="index.html"><h1 class="logo_name">Meeple 4 People Cafe</h1></a>
+                <div class="search_bar">
+                    <a href="#"><img id="search" src="img/search.png"></a>
+                    <a href="#"><button onClick="showForm()" class="reservation">Reservation</button></a>
+                </div>
+            </div>
+            <nav>
+                <ul id="bar">
+                    <li><a href="game.html"> Games </a></li>
+                    <li><a href="snack.html"> Snacks </a> </li>
+                    <li><a href="blog.html"> Blogs </a></li>
+                    <li><a href="about.html"> About Us </a> </li>
+                    <li><a href="contact.html"> Contact Us </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+        <!-- reservation form -->
+        <div id="reservation">
+            <button onClick="closeForm()" class="close_btn">X</button>
+            <div class="headline">
+                <h2>RESERVATION</h2>
+                <p class="sub_head">Reserve a table and We'll arrange the rest for you!</p>   
+            </div>
+            <div>
+                <p class="p_left">Date :</p>
+                <input type="date" placeholder="Select Date">    
+            </div>
+            <div>
+                <p class="p_left">Time :</p>
+                <input type="time" placeholder="Select Time">    
+            </div>
+            <div>
+                <p class="p_guest">No. of Guests :</p>
+                <input class="input_guest" type="number" placeholder="0">    
+            </div>
+            <div>
+                <p class="p_left">Name :</p>
+                <input type="text" placeholder="Your Name">    
+            </div>
+            <div>
+                <p class="p_left">Email :</p>
+                <input type="text" placeholder="Your Email">    
+            </div>
+            <div>
+                <p class="p_left">Phone :</p>
+                <input type="text" placeholder="Your Phone Number">    
+            </div>
+            <p>Special Request (optional) :</p>
+            <input class="input_request" type="text" placeholder="Your Special Request">
+            <div class="reserve_btn_container">
+                <button type="submit" onClick="showDetail()" class="reserve_btn">Reserve!</button>    
+            </div>
+        </div> 
+
+    <section class="overlay2">
+        <!-- <h1> Welcome to Meeple 4 People ! </h1> -->
+            <!-- slick slider -->
+            <div class="carousel">
+                <div>
+                    <img class="main_img" src="img/everdell.jpg">
+                </div>
+                <div>
+                    <img class="main_img" src="img/pointsalad.jpg">
+                </div>
+                <div>
+                    <img class="main_img" src="img/quacks.jpg">
+                </div>
+                <div>
+                    <img class="main_img" src="img/everdell.jpg">
+                </div>
+                <div>
+                    <img class="main_img" src="img/pointsalad.jpg">
+                </div>
+                <div>
+                    <img class="main_img" src="img/quacks.jpg">
+                </div>
+            </div>
+        <!-- <div class="container"> -->
+            <div class="container">
+                <h2> Game of the month </h2>
+                <div class="side-by-side">
+                    <div class="container" id="test">
+                        <a href="game.html"><img class="main_img" src="img/stardewvalley.jpg" alt="stardewvalley"></a>
+                    </div>
+                    <div class="container" id="test">
+                        <h3>Feature of the Month: Stardew Valley The Board Game</h3>
+                        <p>Dream of living during the simpler days of farming, raising cattle, 
+                            and building a small community? Introducing the popular RPG game, 
+                            now available to play as a board game, Stardew Valley: The Board Game! 
+                            Just like the online game, players will work together to restore and 
+                            cultivate their grandfather’s old farm. The game can be played with 1-4 
+                            players, each one taking up a role (farmer, gatherer, miner, craftsman, 
+                            and fisherman). The objective is to fulfill all the goals of your late 
+                            grandfather. Take on the cooperative gameplay and the nostalgic design 
+                            of the video game!
+                        </p>
+                        <button class="main_button"><a href="game.html"> See games </a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="color">
+                <h2> New snacks </h2>
+                <div class="side-by-side" id="reverse">
+                    <div class="container" id="test">
+                        <h3>Did someone say hungry?</h3>
+                        <p>We're on it! We know you can get hungry while playing our boardgames because it's so fun!
+                            You'll find fresh sandwiches and sweets at our snack bar! 
+                            Come and pick your best snacks with your favourite drinks.   
+                            We also have the best bubble tea in town for bubble tea lovers!
+                        </p>
+                        <button class="main_button"><a href="snack.html"> See snacks </a></button>
+                    </div>
+                    <div class="container" id="test">
+                        <a href="snack.html"><img class="main_img" src="img/snack.jpg" alt="snack1"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- powr BEGIN -->
+            <div class="powr-social-feed" id="sharethis-social-feed-64024f80b4b9dc0019a951a6">   
+            </div>
+            <!-- powr END -->
+        </div>
+
+    </section>
+
+
+    <footer> 
+
+        <div class="fcontent">
+            <div class="list">
+                <ul class="list_1">
+                    <li><a href="contact.html"> Contact US </a></li>
+                    <li><a href="#"> Privacy Policy </a></li>
+                </ul>
+                <ul class="list_2">
+                    <li><a href="https://www.instagram.com/meeple_4_people/" target="_blank"><img class="social" src="img/insta.png" alt="instagram"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100090323402371" target="_blank"><img class="social" src="img/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/Meeple_4_People" target="_blank"><img class="social" src="img/twitter.png" alt="twitter"></a></li>
+                </ul>
+            </div>
+
+            <div class="subscribe">
+                <p class="comment"> Subscribe to our newsletters ! </p>
+                <form class="form" method="post">
+                    <input id="email" type="email" placeholder="Email">
+                    <input id="sub_button" type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+        <div class="container">Copyright &copy; Meeple 4 People Cafe</div>
+
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/eventHandler.js"></script>
+
+    
+</body>
+</html>
