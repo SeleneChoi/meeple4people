@@ -1,9 +1,9 @@
 $(document).ready(function(){
     $('.carousel').slick({
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 1000,
     });
 
     const next = document.querySelector(".slick-next");
@@ -23,4 +23,3 @@ $(document).ready(function(){
     next.appendChild(next_img);
     prev.appendChild(prev_img);
   });
-
