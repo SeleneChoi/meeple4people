@@ -415,5 +415,8 @@ p {
         padding:0;
         margin: 1em;
     }
-
+    #logo{
+        width: auto;
+        height: 6em;
+    }
 }
