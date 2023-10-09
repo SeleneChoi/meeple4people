@@ -19,3 +19,18 @@ function closeForm() {
 function showDetail() {
     
 }
+
+
+// Dropdown menu
+const dropdown = document.getElementById('dropdown');
+const menu = document.getElementById('bar');
+
+dropdown.addEventListener("click", ()=>{
+    menu.style.display = menu.style.display === 'none' ? 'flex' : 'none';
+});
+
+document.addEventListener("click", (e) =>{
+    if(e.target !== dropdown && e.target !== menu) {
+        menu.style.display = 'none';
+    }
+});
