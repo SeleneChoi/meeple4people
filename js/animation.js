@@ -4,6 +4,27 @@ $(document).ready(function(){
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1000,
+        infinite: true,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+              breakpoint: 780,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+              }
+            }
+          ]
     });
 
     const next = document.querySelector(".slick-next");
