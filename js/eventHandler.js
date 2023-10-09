@@ -25,12 +25,24 @@ function showDetail() {
 const dropdown = document.getElementById('dropdown');
 const menu = document.getElementById('bar');
 
+function handleOutsideClick(e){
+    if(e.target !== dropdown && e.target !== menu) {
+        menu.style.display = 'none';
+    }
+}
+
+function toggleOutsideClickListener() {
+    if(window.innerWidth <= 780) {
+        document.addEventListener("click", handleOutsideClick);
+    } else {
+        document.removeEventListener("click",handleOutsideClick);
+    }
+}
+
 dropdown.addEventListener("click", ()=>{
     menu.style.display = menu.style.display === 'none' ? 'flex' : 'none';
 });
 
-document.addEventListener("click", (e) =>{
-    if(e.target !== dropdown && e.target !== menu) {
-        menu.style.display = 'none';
-    }
-});
+toggleOutsideClickListener();
+
+window.addEventListener("resize", toggleOutsideClickListener);
