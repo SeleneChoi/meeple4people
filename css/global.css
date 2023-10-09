@@ -185,6 +185,10 @@ nav{
         justify-content: flex-start;
         align-items: center;
     }
+    #bar li a{
+        width: 100vw;
+        text-align: center;
+    }
 }
 @media screen and (max-width:780px){
     nav{
