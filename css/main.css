@@ -190,13 +190,13 @@ p {
 
 
 /* Reservation form */
-#reservation {
+.reservation_layout{
     background-color: #FFD4B6;
     position: absolute;
     top: 20vh;
     left: 30%;
     width: 30%;
-    z-index: 1;
+    z-index: 2;
     border: solid 0.5em #FF8C9480;
     border-radius: 1.5em;
 
@@ -207,14 +207,14 @@ p {
     /* align-items: flex-start; */
 }
 @media screen and (max-width:780px){
-   #reservation{
+   .reservation_layout{
     left: 20%;
     width: 50%;
     font-size: 0.8em;
    } 
 }
 @media screen and (max-width:560px){
-    #reservation{
+    .reservation_layout{
      left: 10%;
      width: 60%;
      font-size: 0.8em;
@@ -222,10 +222,10 @@ p {
     } 
  }
 
-#reservation p, #reservation h2 {
+.reservation_layout p, .reservation_layout h2{
     line-height: 1.1em;
 }
-#reservation .headline {
+.reservation_layout .headline{
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -233,10 +233,13 @@ p {
     /* position: relative; */
     font-family: 'Fredoka', sans-serif;
 }
-#reservation .sub_head{
+.reservation_layout .sub_head{
     font-size: 1.2em;
+    text-align: center;
+    line-height: 1.4em;
+    letter-spacing: 1px;
 }
-#reservation h2 {
+.reservation_layout h2{
     letter-spacing: 0.1em;
 }
 .close_btn{
@@ -253,27 +256,27 @@ p {
     font-weight: 600;
     font-family: 'Fredoka', sans-serif;
 }
-#reservation p{
+.reservation_layout p{
     font-size: 1em;
     font-weight: 600;
     text-align: left;
 }
-#reservation .p_left {
+.reservation_layout .p_left{
     width: 20%;
 }
-#reservation .p_guest {
+.reservation_layout .p_guest{
     width: 40%;
 }
-#reservation .input_guest{
+.reservation_layout .input_guest{
     width: 20%;
 }
-#reservation input {
+.reservation_layout input {
     border: none;
     border-radius: 2em;
     height: 2em;
     width: 80%;
 }
-#reservation div {
+.reservation_layout div{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -293,35 +296,39 @@ p {
     font-weight: 600;
     font-family: 'Fredoka', sans-serif;
 }
-#reservation .input_request{
+.reservation_layout .input_request{
     height: 8em;
     width: 100%;
     border-radius: 1em;
 }
-#reservation input[type="text"]::placeholder, #reservation input[type="number"]::placeholder {
+.reservation_layout input[type="text"]::placeholder, .reservation_layout input[type="number"]::placeholder {
     color: #bbb;
     font-size: 1em;
     font-family: 'ABeeZee', sans-serif;
     padding: 1em;
   }
-#reservation input[type="date"], #reservation input[type="time"] {
+.reservation_layout input[type="date"], .reservation_layout input[type="time"] {
     border: 2px solid #A8E5CF;
     font-family: 'ABeeZee', sans-serif;
     padding: 0.1em 0;
   }
-#reservation input[type="number"]{
+.reservation_layout input[type="number"]{
     font-family: 'ABeeZee', sans-serif;
     padding: 0.1em 1em;
 }
-#reservation input[type="text"]{
+.reservation_layout input[type="text"]{
     padding: 0.1em 0;
 }
 
-#reservation button[type="submit"]:hover{
+.reservation_layout button[type="submit"]:hover{
     background-color: white;
     border: 3px solid #A8E5CF;
 }
-
+.reservation_layout span {
+    width: 80%;
+    display: flex;
+    font-style: italic;
+}
 
 
 

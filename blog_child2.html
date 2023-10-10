@@ -64,43 +64,100 @@
         </div>
     </header>
 
-    <!-- reservation form -->
-    <form id="reservation" style="z-index: 999999999999999999;">
-        <button onClick="closeForm()" class="close_btn">X</button>
-        <div class="headline">
-            <h2>RESERVATION</h2>
-            <p class="sub_head">Reserve a table and We'll arrange the rest for you!</p>   
-        </div>
-        <div>
-            <p class="p_left">Date :</p>
-            <input type="date" placeholder="Select Date">    
-        </div>
-        <div>
-            <p class="p_left">Time :</p>
-            <input type="time" placeholder="Select Time">    
-        </div>
-        <div>
-            <p class="p_guest">No. of Guests :</p>
-            <input class="input_guest" type="number" placeholder="0">    
-        </div>
-        <div>
-            <p class="p_left">Name :</p>
-            <input type="text" placeholder="Your Name">    
-        </div>
-        <div>
-            <p class="p_left">Email :</p>
-            <input type="text" placeholder="Your Email">    
-        </div>
-        <div>
-            <p class="p_left">Phone :</p>
-            <input type="text" placeholder="Your Phone Number">    
-        </div>
-        <p>Special Request (optional) :</p>
-        <input class="input_request" type="text" placeholder="Your Special Request">
-        <div class="reserve_btn_container">
-            <button type="submit" onClick="showDetail()" class="reserve_btn">Reserve!</button>    
-        </div>
-    </form> 
+<!-- Reservation form -->
+<form class="reservation_layout" id="reservation" onsubmit="return false;">
+    <button onClick="closeForm()" class="close_btn">X</button>
+    <div class="headline">
+        <h2>RESERVATION</h2>
+        <p class="sub_head">Reserve a table and We'll arrange the rest for you!</p>
+    </div>
+    <div>
+        <p class="p_left">Date :</p>
+        <input type="date" id="dateInput" placeholder="Select Date">
+    </div>
+    <div>
+        <p class="p_left">Time :</p>
+        <input type="time" id="timeInput" placeholder="Select Time">
+    </div>
+    <div>
+        <p class="p_guest">No. of Guests :</p>
+        <input class="input_guest" type="number" id="guestsInput" placeholder="0">
+    </div>
+    <div>
+        <p class="p_left">Name :</p>
+        <input type="text" id="nameInput" placeholder="Your Name">
+    </div>
+    <div>
+        <p class="p_left">Email :</p>
+        <input type="text" id="emailInput" placeholder="Your Email">
+    </div>
+    <div>
+        <p class="p_left">Phone :</p>
+        <input type="text" id="phoneInput" placeholder="Your Phone Number">
+    </div>
+    <p>Special Request (optional) :</p>
+    <input class="input_request" type="text" id="requestInput" placeholder="Your Special Request">
+    <div class="reserve_btn_container">
+        <button type="button" onClick="showDetail()" class="reserve_btn">Reserve!</button>
+    </div>
+</form>
+
+<div class="reservation_layout" id="detail">
+    <button onClick="closeForm()" class="close_btn">X</button>
+    <div class="headline">
+        <h2>RESERVATION DETAIL</h2>
+        <p class="sub_head">Here are your reservation details:</p>
+    </div>
+    <div>
+        <p class="p_left">Date :</p>
+        <span id="dateDisplay"></span>
+    </div>
+    <div>
+        <p class="p_left">Time :</p>
+        <span id="timeDisplay"></span>
+    </div>
+    <div>
+        <p class="p_guest">No. of Guests :</p>
+        <span id="guestsDisplay"></span>
+    </div>
+    <div>
+        <p class="p_left">Name :</p>
+        <span id="nameDisplay"></span>
+    </div>
+    <div>
+        <p class="p_left">Email :</p>
+        <span id="emailDisplay"></span>
+    </div>
+    <div>
+        <p class="p_left">Phone :</p>
+        <span id="phoneDisplay"></span>
+    </div>
+    <div>
+        <p>Special Request (optional):</p>
+        <span id="requestDisplay"></span>
+    </div>
+    <div class="reserve_btn_container">
+        <button onClick="showForm()" class="reserve_btn" style="background-color:#dcedc1">Go back</button>
+    </div>
+    <div class="reserve_btn_container">
+        <button onClick="showConfirm()" class="reserve_btn" >Confirm</button>
+    </div>
+</div>
+
+<!-- confirm -->
+<div class="reservation_layout" id="confirm">
+    <button onClick="closeForm()" class="close_btn">X</button>
+    <div class="headline">
+        <h2>RESERVATION</h2>
+        <img style="width: 100px; border:10px solid #FF8C94; background:white; border-radius: 90%; padding:1em" src="img/M4P_Logo.png" alt="logo">
+        <p class="sub_head">Woo-hoo! Your reservation is confirmed!</p>
+        <p class="sub_head">You'll soon receive our confirmation email.</p>
+        <p class="sub_head">Get ready for a fantastic board game adventure! We're thrilled to have you join us!</p>
+    </div>
+    <div class="reserve_btn_container">
+        <button onClick="closeForm()" class="reserve_btn" >See you!</button>
+    </div>
+</div>
     
 
 <section>
